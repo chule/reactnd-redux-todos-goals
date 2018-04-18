@@ -57,3 +57,12 @@ store.dispatch({
         completed: false
     }
 })
+
+store.dispatch({
+    type: "ADD_TODO",
+    todo: {
+        id: 1,
+        name: "Learn Redux1",
+        completed: false
+    }
+})
