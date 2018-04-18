@@ -49,6 +49,11 @@ store.subscribe(() => {
     console.log("The new state is " + store.getState())
 })
 
-store.subscribe(() => {
-    console.log("The store changed.")
+store.dispatch({
+    type: "ADD_TODO",
+    todo: {
+        id: 0,
+        name: "Learn Redux",
+        completed: false
+    }
 })
